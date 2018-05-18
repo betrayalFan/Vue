@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<!--<script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>-->
+		<script type="text/jscript" src="js/vue.min.js"></script>
+	</head>
+	<body>
+
+		<div id="app">
+			<p>{{ message }}</p>
+		</div>
+		<!-- 
+			Vue中的指令总结
+
+			1、{{}}:插值表达式
+			
+			2、v-text:添加text文本 (页面显示<span>12345789</span>)
+
+			3、v-html:添加text文本和节点(页面显示12345789)
+
+			4、v-on:click = "":事件绑定
+			简写：@click = ""
+
+			5、v-bind:title= ""：数据绑定
+			简写  :title = ""
+			
+			6、v-model  双向数据绑定
+
+			7、v-if  当指令变量值为false时  DOM会remove（销毁创建DOM  性能的考虑）
+
+			8、v-show  display:none
+			
+			9、v-for   页面上循环结构
+			 <li v-for = "item of list" :key="item">{{item}}</li>
+		 -->
+
+		<script>
+			new Vue({
+				// 绑定dom
+				el: '#app',
+				//数据的定义
+				data: {
+					message:'hellow Vue.js! 2018.4.20'
+				},
+				// 模板定义
+				template:"",
+				// 方法定义
+				methods: {
+					headleClick:function(){
+
+					}
+				},
+				// 属性的计算
+				computed: {
+					fullName:function(){
+
+					}
+				},
+				// 监听
+				watch: {
+					// fullName 值发生变化，触发方法
+					fullName:function{
+						
+					}
+				}
+				
+			})
+
+		
+	</script>
+	</body>
+	
+</html>
